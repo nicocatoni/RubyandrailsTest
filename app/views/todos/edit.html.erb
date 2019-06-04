@@ -1,0 +1,10 @@
+<div class='text-center'>
+ <%= form_with model: @todo, local:true do |f| %>
+    <h3><%= f.label :titulo_del_Todo %></h3>
+    <%= f.text_field :description %>
+    <br>
+    <br>
+    <%= f.submit('Terminar edicion', class: "btn btn-outline-warning")%>
+
+<% end %>
+</div>
